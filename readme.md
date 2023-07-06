@@ -23,25 +23,25 @@
 
 对比发现方法2，信息更完整
 
-### 新闻获取与排序
+### 新闻处理
 
-### 新闻获取
+#### 获取
 
 直接使用News API获得相应的新闻
 
-未使用任何排序手段，根据主题检索：China's high unemployment rate
+当未使用任何排序手段，根据主题检索：China's high unemployment rate
 
-检索到的新闻结果：
+取检索到的第一条新闻，如：
 
 ```
 China's gold-buying boom is slowing sharply as economic woes hit retail demand: Chinese sales of physical gold fell in May from an prior peak of 44% year-over-year, Bloomberg reports.
 ```
 
-关于黄金的销量下降，文本的相关性一般
+文本的相关性一般
 
 
 
-### 排序
+#### 排序
 
 先对获得的新闻做预处理，删除换行，控制文本长度在50~500个字符之间
 
@@ -51,10 +51,9 @@ China's gold-buying boom is slowing sharply as economic woes hit retail demand: 
 
 ```
 Hopes China will unveil fresh measures to kickstart its ailing economy lifted most markets Friday, while the dollar struggled to bounce from losses fuelled by bets the Federal Reserve is near the end of its tightening cycle., Rather than celebrating finishing university, this summer Chinese graduates shared photos of themselves theatrically throwing their degrees into bins..., (marketscreener.com) London's FTSE 100 closed higher, though equities in mainland Europe weakened, after both the Federal Reserve and European Central Bank both hinted that they are not done with rate hikes.   The Federal Reserve opted against a rate lift on …, China's central bank on Tuesday made a surprise cut to one of its key lending rates in a bid to shore up sputtering growth in the world's second largest economy., (marketscreener.com) Asian shares edged higher on Monday as demand for tech stocks buoyed Japan's market, while a data-packed week promises to be pivotal in the outlook for the Chinese economy and U.S. interest rates.  China's recovery has so far disappointed…
-
 ```
 
-
+可见新闻相关性较强
 
 ### 结果
 
