@@ -80,7 +80,7 @@ openai.api_key = 'XXXX'
 news_api_key = 'XXX'
 ```
 
-最后，完成了小项目的基本要求，同时完成了
+最后，搭建了基本bingAssistant，同时完成了
 
 - 支持中文输入；
 
